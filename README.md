@@ -59,3 +59,32 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Instalación y Configuración
+
+### Clonar el repositorio
+
+git clone https://github.com/josealonzo2004/Practica-Laravel.git.
+cd Practica-Laravel
+
+### Instalar dependencias
+
+composer install
+
+### Configura la conexión a la base de datos PostgreSQL en el archivo .env:
+
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=nombre_base
+DB_USERNAME=nombre_usuario
+DB_PASSWORD=contraseña
+
+### Ejecutar migraciones
+
+php artisan migrate
+
+### Iniciar servidor de desarrollo
+
+php artisan serve
